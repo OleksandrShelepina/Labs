@@ -12,10 +12,8 @@ main_dict = {
 }
 
 types_dict = {
-    "пара1": type(main_dict["пара1"]),
-    "пара2": type(main_dict["пара2"]),
-    "пара3": {key: type(value) for key, value in main_dict["пара3"].items()},
-    "пара4": type(main_dict["пара4"])
+    key: type(value) if not isinstance(value, dict) else {k: type(v) for k, v in value.items()}
+    for key, value in main_dict.items()
 }
 
 print("Основний словник:", main_dict)
