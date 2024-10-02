@@ -1,7 +1,7 @@
-name = "Oleksandr"
-surname = "Shelepina"
-age = "17"
+a = "Oleksandr"
+b = "Shelepina"
+c = "17"
 
-for var in [name, surname, age]:
-    print(f"Тип: {type(var)}")
-    print(f"Значення: {var}\n")
+print(a, type(a))
+print(b, type(b))
+print(c, type(c))
