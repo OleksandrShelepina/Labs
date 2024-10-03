@@ -1,6 +1,6 @@
-a = "Oleksandr"
-b = "Shelepina"
-c = "17"
+a = Oleksandr
+b = Shelepina
+c = 17
 
 print(a, type(a))
 print(b, type(b))
