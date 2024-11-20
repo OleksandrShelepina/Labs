@@ -3,7 +3,7 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.utils import executor
 
-API_TOKEN = '7594972467:AAFjn09gryrF7yawVn05fFSOP6V6udGWCtM'
+API_TOKEN = ''
 
 logging.basicConfig(level=logging.INFO)
 
