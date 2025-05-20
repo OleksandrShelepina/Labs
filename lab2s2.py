@@ -14,7 +14,7 @@ class Osnova:
 
 class DochClass(Osnova):
     def __init__(self, name=None, last_name=None, birth_year=None, father_name=None, city=None, phone_number=None, email=None, adress=None, hobbi=None):
-        super().init(name, last_name, birth_year)
+        super().__init__(name, last_name, birth_year)  # Виправлено тут
         self.father_name = father_name
         self.city = city
         self.phone_number = phone_number
@@ -52,7 +52,8 @@ class DochClass(Osnova):
             f"Хоббі: {self.hobbi}"
         )
 
-person = DochClass("Олександр", "Шелепіна", 2006, "Володиморович", "Луцьк", "+38050122947", "lutskhour@ukr.net", "Тиха 10", "Плавання")
+# Створення об'єкта та виклик методів
+person = DochClass("Олександр", "Шелепіна", 2006, "Володимирович", "Луцьк", "+38050122947", "lutskhour@ukr.net", "Тиха 10", "Плавання")
 print("Вас звуть: ", person.full_name())
 print("Ваш вік: ", person.rozrahynok_age(2025))
 print(person.age_to_adulthood(2025))
