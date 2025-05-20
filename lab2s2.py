@@ -1,5 +1,5 @@
 class Osnova:
-    def init(self, name=None, last_name=None, birth_year=None):
+    def __init__(self, name=None, last_name=None, birth_year=None):
         self.name = name
         self.last_name = last_name
         self.birth_year = birth_year
@@ -13,7 +13,7 @@ class Osnova:
         return f"{self.name} {self.last_name}" if self.name and self.last_name else None
 
 class DochClass(Osnova):
-    def init(self, name=None, last_name=None, birth_year=None, father_name=None, city=None, phone_number=None, email=None, adress=None, hobbi=None):
+    def __init__(self, name=None, last_name=None, birth_year=None, father_name=None, city=None, phone_number=None, email=None, adress=None, hobbi=None):
         super().init(name, last_name, birth_year)
         self.father_name = father_name
         self.city = city
